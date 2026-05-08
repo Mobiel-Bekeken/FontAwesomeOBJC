@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "FontAwesome-iOS",
+    name: "FontAwesomeOBJC",
     defaultLocalization: "en",    
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "FontAwesome-iOS",
-            targets: ["FontAwesome-iOS"]
+            name: "FontAwesomeOBJC",
+            targets: ["FontAwesomeOBJC"]
         ),
     ],
     dependencies: [
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FontAwesome-iOS",
+            name: "FontAwesomeOBJC",
             dependencies: [
                 
             ],

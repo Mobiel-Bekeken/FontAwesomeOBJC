@@ -19,9 +19,7 @@ let package = Package(
         .target(
             name: "FontAwesomeOBJC",
             dependencies: [],
-            resources: [
-                .copy("Resources/FontAwesome.ttf")
-            ],
+            resources: [],
             publicHeadersPath: "include",
             linkerSettings: [
                 .linkedFramework("UIKit"),

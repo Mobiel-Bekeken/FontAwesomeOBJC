@@ -27,11 +27,6 @@
 @interface UIFont (FontAwesome)
 
 /**
- @abstract Registers the FontAwesome font from the package resources.
- */
-+ (void)registerFontAwesomeFont;
-
-/**
  @abstract Returns the FontAwesome iconic font.
  */
 + (UIFont*)fontAwesomeFontOfSize:(CGFloat)size;

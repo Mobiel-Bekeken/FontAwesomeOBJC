@@ -22,7 +22,7 @@ let package = Package(
             dependencies: [
                 
             ],
-            path: "FontAwesome-iOS",
+            path: ".",
             resources: [
                 .copy("Resources/FontAwesome.ttf")
             ],

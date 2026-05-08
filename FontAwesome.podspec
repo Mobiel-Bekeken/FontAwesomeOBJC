@@ -13,9 +13,9 @@ This project uses the FontAwesome fix made by Pit Garbe that you can find at htt
   s.source       = { :git => "https://github.com/paramaggarwal/FontAwesome-iOS.git", :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
   s.tvos.deployment_target = '9.0'
-  s.source_files = '*.{h,m}'
+  s.source_files = 'Sources/FontAwesomeOBJC/**/*.{h,m}'
   s.exclude_files = 'Demo'
-  s.resources = "Resources/*.ttf"
+  s.resources = "Sources/FontAwesomeOBJC/Resources/*.ttf"
   s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
   s.requires_arc = true
 end

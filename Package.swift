@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "FontAwesomeOBJC",
-    defaultLocalization: "en",    
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v15)
     ],
@@ -14,19 +14,20 @@ let package = Package(
         ),
     ],
     dependencies: [
-           
     ],
     targets: [
         .target(
             name: "FontAwesomeOBJC",
-            dependencies: [
-                
-            ],
-            path: ".",
+            dependencies: [],
             resources: [
                 .copy("Resources/FontAwesome.ttf")
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
+            linkerSettings: [
+                .linkedFramework("UIKit"),
+                .linkedFramework("Foundation"),
+                .linkedFramework("CoreGraphics")
+            ]
         )
     ]
 )
